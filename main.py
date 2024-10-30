@@ -88,8 +88,6 @@ async def on_message(msg: discord.Message):
 
     if msg.author.id == 716390085896962058 and msg.guild.id== config.GuildId:
         for embed in msg.embeds:
-            print(embed.title)
-            print(embed.description)
             if 'mysterious' in embed.title and "Trade" not in embed.description:
                 await asyncio.sleep(5)
                 try: 
